@@ -334,8 +334,8 @@ export function createFindingsTable(report: SingleReport) {
   })
 }
 
-export function createCriteriaTable(report: SingleReport, options: ConverterOptions['findings']) {
-  const auditRows = [];
+export function createCriteriaTable(report: SingleReport, options: ConverterOptions['criteria']) {
+  const auditRows: docx.TableRow[] = [];
   let remappedAudits = [];
   remappedAudits = report.auditSample.map((audit) => {
     const criteriaObj = CRITERIA_MAP.find(obj => obj.provided === audit.test.id);
@@ -346,7 +346,7 @@ export function createCriteriaTable(report: SingleReport, options: ConverterOpti
     return audit;
   })
 
-  if (options.exclude.notChecked || options.exclude.cannotTell) {
+  if (options?.exclude.notChecked || options?.exclude.cannotTell) {
     remappedAudits = remappedAudits.filter((audit: AuditSampleAssertion) => {
       if (options.exclude.notChecked && audit.result.outcome.id === 'earl:untested') {
         return false;

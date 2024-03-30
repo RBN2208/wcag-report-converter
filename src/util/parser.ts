@@ -12,7 +12,7 @@ export default async function parseJsonFile(file: File): Promise<SingleReport | 
         const json = JSON.parse(event.target.result);
         delete json['@context'];
         console.log("Successfully parsed file", json);
-        return resolve(json) as SingleReport;
+        resolve(json as SingleReport); // Resolve with parsed JSON directly
       } else {
         console.log("Wrong event.target.result type");
         resolve(null);

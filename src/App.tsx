@@ -8,9 +8,23 @@ function App() {
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>): Promise<void> {
     event.preventDefault();
-    const { upload, cannotTell, notChecked, notPresent } = event.currentTarget.elements;
 
-    const file = upload.files[0];
+    // Type assertion for 'event.currentTarget.elements'
+    const elements = event.currentTarget.elements as HTMLFormControlsCollection & {
+      cannotTell: HTMLInputElement;
+      notChecked: HTMLInputElement;
+      notPresent: HTMLInputElement;
+      upload: HTMLInputElement;
+    };
+
+    // Accessing form elements using property access
+    const cannotTell = elements['cannotTell'];
+    const notChecked = elements['notChecked'];
+    const notPresent = elements['notPresent'];
+    const upload = elements['upload'];
+
+    // Check if 'upload' element exists and 'files' property is not null
+    const file = upload?.files?.[0];
 
     console.log("New File detected", file);
 
@@ -24,12 +38,14 @@ function App() {
       }
     }
 
-    await parseJsonFile(file).then(report => {
-      if (report !== null) {
-        console.log("Starting word transformation")
-        docxConverter(report, options);
-      }
-    });
+    if (file) {
+      await parseJsonFile(file).then(report => {
+        if (report !== null) {
+          console.log("Starting word transformation")
+          docxConverter(report, options);
+        }
+      });
+    }
   }
 
   return (
