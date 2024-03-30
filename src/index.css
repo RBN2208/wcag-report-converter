@@ -1,0 +1,84 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #dcdcdc;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  text-align: center;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#content {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+h1 {
+  margin: 30px;
+}
+
+.tool-info {
+  margin: 50px 0;
+}
+button[type='submit'] {
+  padding: 10px 20px;
+  appearance: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #137613;
+  cursor: pointer;
+}
+
+.form-wrapper h2 {
+  margin-bottom: 20px;
+}
+
+.form {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: white;
+  text-align: left;
+}
+
+.fieldset {
+
+}
+
+.elementGroup {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.upload {
+  flex-direction: column;
+  align-items: start;
+}

@@ -1,0 +1,6307 @@
+{
+  "@context": {
+    "reporter": "http://github.com/w3c/wai-wcag-em-report-tool/",
+    "wcagem": "http://www.w3.org/TR/WCAG-EM/#",
+    "Evaluation": "wcagem:procedure",
+    "defineScope": "wcagem:step1",
+    "scope": "wcagem:step1a",
+    "step1b": {
+      "@id": "wcagem:step1b",
+      "@type": "@id"
+    },
+    "conformanceTarget": "step1b",
+    "accessibilitySupportBaseline": "wcagem:step1c",
+    "additionalEvaluationRequirements": "wcagem:step1d",
+    "exploreTarget": "wcagem:step2",
+    "essentialFunctionality": "wcagem:step2b",
+    "pageTypeVariety": "wcagem:step2c",
+    "technologiesReliedUpon": "wcagem:step2d",
+    "selectSample": "wcagem:step3",
+    "structuredSample": "wcagem:step3a",
+    "randomSample": "wcagem:step3b",
+    "Website": "wcagem:website",
+    "Webpage": "wcagem:webpage",
+    "auditSample": "wcagem:step4",
+    "reportFindings": "wcagem:step5",
+    "documentSteps": "wcagem:step5a",
+    "commissioner": "wcagem:commissioner",
+    "evaluator": "wcagem:evaluator",
+    "evaluationSpecifics": "wcagem:step5b",
+    "WCAG": "http://www.w3.org/TR/WCAG/#",
+    "WCAG20": "http://www.w3.org/TR/WCAG20/#",
+    "WCAG21": "http://www.w3.org/TR/WCAG21/#",
+    "WAI": "http://www.w3.org/WAI/",
+    "A": "WAI:WCAG2A-Conformance",
+    "AA": "WAI:WCAG2AA-Conformance",
+    "AAA": "WAI:WCAG2AAA-Conformance",
+    "wcagVersion": "WAI:standards-guidelines/wcag/#versions",
+    "reportToolVersion": "wcagem:reportToolVersion",
+    "earl": "http://www.w3.org/ns/earl#",
+    "Assertion": "earl:Assertion",
+    "TestMode": "earl:TestMode",
+    "TestCriterion": "earl:TestCriterion",
+    "TestCase": "earl:TestCase",
+    "TestRequirement": "earl:TestRequirement",
+    "TestSubject": "earl:TestSubject",
+    "TestResult": "earl:TestResult",
+    "OutcomeValue": "earl:OutcomeValue",
+    "Pass": "earl:Pass",
+    "Fail": "earl:Fail",
+    "CannotTell": "earl:CannotTell",
+    "NotApplicable": "earl:NotApplicable",
+    "NotTested": "earl:NotTested",
+    "assertedBy": "earl:assertedBy",
+    "mode": "earl:mode",
+    "result": "earl:result",
+    "subject": "earl:subject",
+    "test": "earl:test",
+    "outcome": "earl:outcome",
+    "dcterms": "http://purl.org/dc/terms/",
+    "title": "dcterms:title",
+    "description": "dcterms:description",
+    "summary": "dcterms:summary",
+    "date": "dcterms:date",
+    "hasPart": "dcterms:hasPart",
+    "isPartOf": "dcterms:isPartOf",
+    "id": "@id",
+    "type": "@type",
+    "language": "@language"
+  },
+  "language": "en",
+  "type": "Evaluation",
+  "reportToolVersion": "3.0.3",
+  "defineScope": {
+    "id": "_:defineScope",
+    "scope": {
+      "description": "",
+      "title": ""
+    },
+    "conformanceTarget": "AA",
+    "accessibilitySupportBaseline": "",
+    "additionalEvaluationRequirements": "",
+    "wcagVersion": "2.2"
+  },
+  "exploreTarget": {
+    "id": "_:exploreTarget",
+    "essentialFunctionality": "",
+    "pageTypeVariety": "",
+    "technologiesReliedUpon": []
+  },
+  "selectSample": {
+    "id": "_:selectSample",
+    "structuredSample": [
+      {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      }
+    ],
+    "randomSample": []
+  },
+  "auditSample": [
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.121Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:27.846Z",
+        "description": "global observation",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:non-text-content",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.121Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.121Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:audio-only-and-video-only-prerecorded",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.121Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.121Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:captions-prerecorded",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.121Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.121Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:audio-description-or-media-alternative-prerecorded",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.121Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.121Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:captions-live",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.122Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.122Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:audio-description-prerecorded",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.122Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.122Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:info-and-relationships",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.122Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.122Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:meaningful-sequence",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.122Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.122Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:sensory-characteristics",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.122Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.122Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:orientation",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.122Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.122Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:identify-input-purpose",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.122Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.122Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:use-of-color",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.122Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.122Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:audio-control",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.122Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.122Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:contrast-minimum",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.122Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.122Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:resize-text",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.122Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.122Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:images-of-text",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.122Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.122Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:reflow",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.122Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.122Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:non-text-contrast",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.122Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.122Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:text-spacing",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.122Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.122Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:content-on-hover-or-focus",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.122Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.122Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:keyboard",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.122Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.122Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:no-keyboard-trap",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.122Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.122Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:character-key-shortcuts",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.122Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.122Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:timing-adjustable",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.122Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.122Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:pause-stop-hide",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.122Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.122Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:three-flashes-or-below-threshold",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.122Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.122Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:bypass-blocks",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.122Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.122Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:page-titled",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.123Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.123Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:focus-order",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.123Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.123Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:link-purpose-in-context",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.123Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.123Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:multiple-ways",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.123Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.123Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:headings-and-labels",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.124Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.124Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:focus-visible",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.124Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.124Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:focus-not-obscured-minimum",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.124Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.124Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:pointer-gestures",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.124Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.124Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:pointer-cancellation",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.124Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.124Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:label-in-name",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.124Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.124Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:motion-actuation",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.124Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.124Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:dragging-movements",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.124Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.124Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:target-size-minimum",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.124Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.124Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:language-of-page",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.124Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.124Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:language-of-parts",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.124Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.124Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:on-focus",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.124Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.124Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:on-input",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.124Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.124Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:consistent-navigation",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.124Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.124Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:consistent-identification",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.124Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.124Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:consistent-help",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.124Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.124Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:error-identification",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.124Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.124Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:labels-or-instructions",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.124Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.124Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:error-suggestion",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.829Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.124Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.124Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:error-prevention-legal-financial-data",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.829Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.124Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.124Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:redundant-entry",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.829Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.124Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.124Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:accessible-authentication-minimum",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.829Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.124Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.124Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:name-role-value",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.829Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:51:56.124Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:51:56.124Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_1",
+        "type": [
+          "TestSubject",
+          "Website"
+        ],
+        "date": "2024-03-28T21:51:52.782Z",
+        "description": "",
+        "title": ""
+      },
+      "test": {
+        "id": "WCAG22:status-messages",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.829Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.913Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:33.597Z",
+        "description": "page1 observation",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG20:text-equiv-all",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.782Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.914Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.914Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG20:media-equiv-av-only-alt",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.782Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.915Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.915Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG20:media-equiv-captions",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.782Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.916Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.916Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG20:media-equiv-audio-desc",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.782Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.916Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.916Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG20:media-equiv-real-time-captions",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.782Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.917Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.917Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG20:media-equiv-audio-desc-only",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.782Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.918Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.918Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG20:content-structure-separation-programmatic",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.826Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.918Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.918Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG20:content-structure-separation-sequence",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.826Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.918Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.918Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG20:content-structure-separation-understanding",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.826Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.919Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.919Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG21:orientation",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.919Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.919Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG21:identify-input-purpose",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.920Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.920Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG20:visual-audio-contrast-without-color",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.826Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.920Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.920Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG20:visual-audio-contrast-dis-audio",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.826Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.921Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.921Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG20:visual-audio-contrast-contrast",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.826Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.922Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.922Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG20:visual-audio-contrast-scale",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.826Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.922Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.922Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG20:visual-audio-contrast-text-presentation",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.826Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.923Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.923Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG21:reflow",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.923Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.923Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG21:non-text-contrast",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.924Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.924Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG21:text-spacing",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.924Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.924Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG21:content-on-hover-or-focus",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.924Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.924Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG20:keyboard-operation-keyboard-operable",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.826Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.925Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.925Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG20:keyboard-operation-trapping",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.826Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.926Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.926Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG21:character-key-shortcuts",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.926Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.926Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG20:time-limits-required-behaviors",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.826Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.927Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.927Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG20:time-limits-pause",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.826Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.928Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.928Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG20:seizure-does-not-violate",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.826Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.928Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.928Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG20:navigation-mechanisms-skip",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.826Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.929Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.929Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG20:navigation-mechanisms-title",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.826Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.930Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.930Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG20:navigation-mechanisms-focus-order",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.826Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.930Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.930Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG20:navigation-mechanisms-refs",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.826Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.931Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.931Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG20:navigation-mechanisms-mult-loc",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.826Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.932Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.932Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG20:navigation-mechanisms-descriptive",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.826Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.932Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.932Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG20:navigation-mechanisms-focus-visible",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.826Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.933Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.933Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG22:focus-not-obscured-minimum",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.933Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.933Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG21:pointer-gestures",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.934Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.934Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG21:pointer-cancellation",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.934Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.934Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG21:label-in-name",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.934Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.934Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG21:motion-actuation",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.935Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.935Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG22:dragging-movements",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.936Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.936Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG22:target-size-minimum",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.936Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.936Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG20:meaning-doc-lang-id",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.827Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.937Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.937Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG20:meaning-other-lang-id",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.827Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.938Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.938Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG20:consistent-behavior-receive-focus",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.827Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.938Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.938Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG20:consistent-behavior-unpredictable-change",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.827Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.939Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.939Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG20:consistent-behavior-consistent-locations",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.827Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.939Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.939Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG20:consistent-behavior-consistent-functionality",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.827Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.939Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.939Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG22:consistent-help",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.940Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.940Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG20:minimize-error-identified",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.827Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.940Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.940Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG20:minimize-error-cues",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.827Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.941Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.941Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG20:minimize-error-suggestions",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.827Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.941Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.941Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG20:minimize-error-reversible",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.827Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.942Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.942Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG22:redundant-entry",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.829Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.942Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.942Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG22:accessible-authentication-minimum",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.829Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.943Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.943Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG20:ensure-compat-rsv",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.827Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:16.944Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:16.944Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_2",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:06.779Z",
+        "description": "",
+        "title": "page1"
+      },
+      "test": {
+        "id": "WCAG21:status-messages",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.347Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:40.498Z",
+        "description": "page2 observation",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG20:text-equiv-all",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.782Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.347Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.347Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG20:media-equiv-av-only-alt",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.782Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.347Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.347Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG20:media-equiv-captions",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.782Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.348Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.348Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG20:media-equiv-audio-desc",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.782Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.348Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.348Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG20:media-equiv-real-time-captions",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.782Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.349Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.349Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG20:media-equiv-audio-desc-only",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.782Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.349Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.349Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG20:content-structure-separation-programmatic",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.826Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.351Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.351Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG20:content-structure-separation-sequence",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.826Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.355Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.355Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG20:content-structure-separation-understanding",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.826Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.355Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.355Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG21:orientation",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.355Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.355Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG21:identify-input-purpose",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.356Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.356Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG20:visual-audio-contrast-without-color",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.826Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.356Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.356Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG20:visual-audio-contrast-dis-audio",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.826Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.357Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.357Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG20:visual-audio-contrast-contrast",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.826Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.357Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.357Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG20:visual-audio-contrast-scale",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.826Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.358Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.358Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG20:visual-audio-contrast-text-presentation",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.826Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.358Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.358Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG21:reflow",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.358Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.358Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG21:non-text-contrast",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.359Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.359Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG21:text-spacing",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.359Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.359Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG21:content-on-hover-or-focus",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.360Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.360Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG20:keyboard-operation-keyboard-operable",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.826Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.360Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.360Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG20:keyboard-operation-trapping",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.826Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.360Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.360Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG21:character-key-shortcuts",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.361Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.361Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG20:time-limits-required-behaviors",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.826Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.361Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.361Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG20:time-limits-pause",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.826Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.361Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.361Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG20:seizure-does-not-violate",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.826Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.362Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.362Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG20:navigation-mechanisms-skip",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.826Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.362Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.362Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG20:navigation-mechanisms-title",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.826Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.363Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.363Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG20:navigation-mechanisms-focus-order",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.826Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.364Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.364Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG20:navigation-mechanisms-refs",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.826Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.364Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.364Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG20:navigation-mechanisms-mult-loc",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.826Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.365Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.365Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG20:navigation-mechanisms-descriptive",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.826Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.365Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.365Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG20:navigation-mechanisms-focus-visible",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.826Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.365Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.365Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG22:focus-not-obscured-minimum",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.366Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.366Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG21:pointer-gestures",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.367Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.367Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG21:pointer-cancellation",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.367Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.367Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG21:label-in-name",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.368Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.368Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG21:motion-actuation",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.368Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.368Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG22:dragging-movements",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.368Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.368Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG22:target-size-minimum",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.369Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.369Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG20:meaning-doc-lang-id",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.827Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.369Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.369Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG20:meaning-other-lang-id",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.827Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.370Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.370Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG20:consistent-behavior-receive-focus",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.827Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.370Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.370Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG20:consistent-behavior-unpredictable-change",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.827Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.371Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.371Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG20:consistent-behavior-consistent-locations",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.827Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.371Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.371Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG20:consistent-behavior-consistent-functionality",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.827Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.372Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.372Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG22:consistent-help",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.373Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.373Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG20:minimize-error-identified",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.827Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.373Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.373Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG20:minimize-error-cues",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.827Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.373Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.373Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG20:minimize-error-suggestions",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.827Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.374Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.374Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG20:minimize-error-reversible",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.827Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.374Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.374Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG22:redundant-entry",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.829Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.375Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.375Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG22:accessible-authentication-minimum",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.829Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.375Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.375Z",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG20:ensure-compat-rsv",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.827Z"
+      }
+    },
+    {
+      "type": "Assertion",
+      "date": "2024-03-28T21:52:17.376Z",
+      "mode": {
+        "type": "TestMode",
+        "@value": "earl:manual"
+      },
+      "result": {
+        "type": "TestResult",
+        "date": "2024-03-28T21:52:17.376Z",
+        "description": "",
+        "outcome": {
+          "id": "earl:untested",
+          "type": [
+            "OutcomeValue",
+            "NotTested"
+          ]
+        }
+      },
+      "subject": {
+        "id": "_:subject_3",
+        "type": [
+          "TestSubject",
+          "Webpage"
+        ],
+        "date": "2024-03-28T21:52:10.113Z",
+        "description": "",
+        "title": "page2"
+      },
+      "test": {
+        "id": "WCAG21:status-messages",
+        "type": [
+          "TestCriterion",
+          "TestRequirement"
+        ],
+        "date": "2024-03-28T21:51:52.828Z"
+      }
+    }
+  ],
+  "reportFindings": {
+    "date": {
+      "type": "http://www.w3.org/TR/NOTE-datetime",
+      "@value": "Thu Mar 28 2024"
+    },
+    "summary": "",
+    "title": "",
+    "commissioner": "",
+    "evaluator": "",
+    "documentSteps": [
+      {
+        "id": "_:about"
+      },
+      {
+        "id": "_:defineScope"
+      },
+      {
+        "id": "_:exploreTarget"
+      },
+      {
+        "id": "_:selectSample"
+      }
+    ],
+    "evaluationSpecifics": ""
+  }
+}
