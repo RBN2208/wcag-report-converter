@@ -11,15 +11,15 @@ export default async function parseJsonFile(file: File): Promise<SingleReport | 
       if (event.target && typeof event.target.result === 'string') {
         const json = JSON.parse(event.target.result);
         delete json['@context'];
-        console.log("Successfully parsed file", json);
+        console.log("Parser: Successfully parsed file", json);
         resolve(json as SingleReport); // Resolve with parsed JSON directly
       } else {
-        console.log("Wrong event.target.result type");
+        console.log("Parser: Parsing failed -> Wrong event.target.result type");
         resolve(null);
       }
     };
     fileReader.onerror = error => {
-      console.log("File reading failed:", error);
+      console.log("Parser: Parsing failed -> File reading failed:", error);
       resolve(null);
     };
     fileReader.readAsText(file);

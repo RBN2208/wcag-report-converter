@@ -10,6 +10,7 @@ import {
 
 
 export default function docxConverter(report: SingleReport, options: ConverterOptions) {
+  console.log("Converter: Starting word transformation")
   const doc = new docx.Document({
     creator: report.reportFindings.evaluator,
     title: report.reportFindings.title,
@@ -31,7 +32,7 @@ export default function docxConverter(report: SingleReport, options: ConverterOp
   })
 
   docx.Packer.toBlob(doc).then((blob) => {
-    console.log("Document created successfully");
+    console.log("Converter: Document created, init download");
     saveAs(blob, report.reportFindings.title);
   });
 }

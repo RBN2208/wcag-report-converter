@@ -4,12 +4,11 @@ import { FormEvent } from 'react';
 import { ConverterOptions } from './types/types';
 
 function App() {
-  console.log("Initialize App");
+  console.log("App: Initialize");
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>): Promise<void> {
     event.preventDefault();
 
-    // Type assertion for 'event.currentTarget.elements'
     const elements = event.currentTarget.elements as HTMLFormControlsCollection & {
       cannotTell: HTMLInputElement;
       notChecked: HTMLInputElement;
@@ -17,16 +16,13 @@ function App() {
       upload: HTMLInputElement;
     };
 
-    // Accessing form elements using property access
     const cannotTell = elements['cannotTell'];
     const notChecked = elements['notChecked'];
     const notPresent = elements['notPresent'];
     const upload = elements['upload'];
 
-    // Check if 'upload' element exists and 'files' property is not null
     const file = upload?.files?.[0];
 
-    console.log("New File detected", file);
 
     const options: ConverterOptions = {
       criteria: {
@@ -39,9 +35,11 @@ function App() {
     }
 
     if (file) {
+      console.log("Submit: New File detected", file);
+      console.log("Submit: Options detected", options);
+
       await parseJsonFile(file).then(report => {
         if (report !== null) {
-          console.log("Starting word transformation")
           docxConverter(report, options);
         }
       });
@@ -100,7 +98,7 @@ function App() {
                 <input id={'upload'} type="file" name={'upload'} accept={'application/json'} />
               </div>
             </section>
-            <button type={'submit'}>Convert</button>
+            <button type={'submit'}>Convert & Download</button>
           </form>
         </section>
       </main>
